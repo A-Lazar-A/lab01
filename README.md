@@ -131,6 +131,18 @@ $ gist REPORT.md
 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
 11. Найдите *топ10* самых "тяжёлых".
 
+## Homework is done
+1. wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
+2. tar -xf boost_1_72_0.tar.gz
+3. ls | wc
+4. ls -R | wc
+5. find . -name "*.cpp" | wc; find . -name "*.hpp" | wc; find . -not -name "*.h" -not -name "*.cpp"
+6. realpath any.hpp
+7. grep -rl 'boost::asio'
+8. ./bootstrap.sh; ./b2
+9. mv ./stage/lib/ ~/boost-libs 
+10. ls -shS
+
 ```
 Copyright (c) 2015-2020 The ISC Authors
 ```
