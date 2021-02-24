@@ -136,7 +136,7 @@ $ gist REPORT.md
 2. tar -xf boost_1_72_0.tar.gz
 3. ls | wc
 4. ls -R | wc
-5. find . -name "*.cpp" | wc; find . -name "*.hpp" | wc; find . -not -name "*.h" -not -name "*.cpp"
+5. find . -name "*.cpp" | wc; find . -name "*.h"|wc && find . -name "*hpp" | wc; find . -not -name "*.h" -not -name "*.hpp" -not -name "*.cpp" | wc
 6. realpath any.hpp
 7. grep -rl 'boost::asio'
 8. ./bootstrap.sh; ./b2
